@@ -1,4 +1,4 @@
-20525506037571744
+20544950897276811
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59059,6 +59059,13 @@ DO-214AB
 2
 2
 MacroLib
+DRV8833_MODULE
+
+
+0
+12
+12
+MacroLib
 Disipador_SOT110-1
 Disipador SOT110-1
 
@@ -59087,6 +59094,20 @@ Fuse
 2
 2
 MacroLib
+HTSSOP
+
+
+0
+16
+16
+MacroLib
+HTSSOPP
+DRV8833PWP
+Integrated Circuit, DRV8833,
+0
+17
+17
+MacroLib
 INDPM125125X600N
 DR125-220-R
 Inductor
@@ -59100,6 +59121,13 @@ Diode, DO-41 package
 0
 2
 2
+MacroLib
+JST_XH_1X6
+S6B-XH-A (LF)(SN)
+Connector, conector, pin
+0
+6
+6
 MacroLib
 JackH3.5mm
 
@@ -59120,6 +59148,20 @@ LED_5mm_RGB
 
 0
 4
+4
+MacroLib
+LEVEL_CONVERTER
+
+
+0
+12
+12
+MacroLib
+MP1584_MODULE
+
+
+0
+8
 4
 MacroLib
 Modulo_Micro_SD
@@ -59143,7 +59185,35 @@ OLED oled
 4
 4
 MacroLib
+PIN_STRIP_9
+
+
+0
+9
+9
+MacroLib
+Pin_Header_2X6
+
+
+0
+12
+6
+MacroLib
 Pin_strip_02x05
+
+
+0
+10
+10
+MacroLib
+Pin_strip_2x6
+
+
+0
+12
+12
+MacroLib
+Pin_strip_10
 
 
 0
@@ -59178,6 +59248,13 @@ THT DIP DIL PDIP 2.54mm 7.62mm 300mil SMDSocket SmallPads
 16
 1
 MacroLib
+SOIC8E
+
+MP1584, INTREGRATE CIRCUID
+0
+9
+9
+MacroLib
 SOIC127P600X170-9N
 SOIC-8 EP_2020
 Integrated Circuit
@@ -59206,6 +59283,13 @@ SOT110-1
 9
 9
 MacroLib
+SRP65404R7M
+SRP6540-4R7M-1
+Inductor, Bobina
+0
+2
+2
+MacroLib
 SSOP-8
 SOIC PowerPad, 8 pins
 
@@ -59219,6 +59303,13 @@ ST7920
 0
 20
 20
+MacroLib
+TO-220-3_Vertical
+TO-220-3, Vertical, RM 2.54mm, see https://www.vishay.com/docs/66542/to-220-1.pdf
+TO-220-3 Vertical RM 2.54mm
+0
+3
+3
 MacroLib
 TSOP17
 
