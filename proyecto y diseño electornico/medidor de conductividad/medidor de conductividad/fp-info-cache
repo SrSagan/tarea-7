@@ -1,4 +1,4 @@
-20527292792105196
+20525506037571744
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59219,13 +59219,6 @@ ST7920
 0
 20
 20
-MacroLib
-TO-220-3_Vertical
-TO-220-3, Vertical, RM 2.54mm, see https://www.vishay.com/docs/66542/to-220-1.pdf
-TO-220-3 Vertical RM 2.54mm
-0
-3
-3
 MacroLib
 TSOP17
 
