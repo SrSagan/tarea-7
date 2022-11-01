@@ -1,4 +1,4 @@
-20840187215735622
+20840199315839276
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59479,8 +59479,8 @@ SOT-23-6
 6
 6
 MacroLib
-SOT110-1
-9 pin package for some TDA
+SOT-110
+
 
 0
 9

@@ -1,0 +1,262 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.5 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                        Dynamic AC of puenteHtrans                        ***
+***                           10/1/2022 5:07:40 PM                           ***
+********************************************************************************
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+AC Voltages at Frequency=1e+006 (Mag, Degrees)
+==============================================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC                0  2                  0  3                  0 
+4                  0  5                  0  6                  0 
+7                  0  D                  0  B                  0 
+A                  0  C                  0  12                 0 
+13                 0  14                 0  15                 0 
+16                 0  17                 0  18                 0 
+19                 0 
+
+
+AC values for Diode (Mag, Degrees)
+==================================
+Instance:                       D1                    D2                    D3
+Using model:                1N4007                1N4007                1N4007
+
+Power AC Terms:
+PD                               0                     0                     0
+PS                               0                     0                     0
+
+AC Pin Currents:
+Id                               0                     0                     0
+
+Device Variables:
+area                        1.000                 1.000                 1.000 
+ic                          0.000                 0.000                 0.000 
+
+
+Instance:                       D4
+Using model:                1N4007
+
+Power AC Terms:
+PD                               0
+PS                               0
+
+AC Pin Currents:
+Id                               0
+
+Device Variables:
+area                        1.000 
+ic                          0.000 
+
+
+
+AC values for Bipolar Junction Transistors NPN (Mag, Degrees)
+=============================================================
+Instance:                       Q1                    Q2                    Q7
+Using model:                 TIP41                 TIP41                 BC546
+
+Power AC Terms:
+PG                               0                     0                     0
+PD                               0                     0                     0
+PS                               0                     0                     0
+
+AC Pin Currents:
+Ib                               0                     0                     0
+Ic                               0                     0                     0
+Ie                               0                     0                     0
+Is                               0                     0                     0
+
+Device Variables:
+area                        1.000                 1.000                 1.000 
+vbe                         0.000                 0.000                 0.000 
+vce                         0.000                 0.000                 0.000 
+
+
+Instance:                       Q8                    Q9                   Q10
+Using model:                 BC546                 BC546                 BC546
+
+Power AC Terms:
+PG                               0                     0                     0
+PD                               0                     0                     0
+PS                               0                     0                     0
+
+AC Pin Currents:
+Ib                               0                     0                     0
+Ic                               0                     0                     0
+Ie                               0                     0                     0
+Is                               0                     0                     0
+
+Device Variables:
+area                        1.000                 1.000                 1.000 
+vbe                         0.000                 0.000                 0.000 
+vce                         0.000                 0.000                 0.000 
+
+
+
+AC values for Bipolar Junction Transistors PNP (Mag, Degrees)
+=============================================================
+Instance:                       Q3                    Q4
+Using model:                 TIP42                 TIP42
+
+Power AC Terms:
+PG                               0                     0
+PD                               0                     0
+PS                               0                     0
+
+AC Pin Currents:
+Ib                               0                     0
+Ic                               0                     0
+Ie                               0                     0
+Is                               0                     0
+
+Device Variables:
+area                        1.000                 1.000 
+vbe                         0.000                 0.000 
+vce                         0.000                 0.000 
+
+
+
+AC values for Resistor (Mag, Degrees)
+=====================================
+Instance:                  METER3.R                    R2                    R3
+
+Power AC Terms:
+PD                                0                     0                     0
+
+AC Pin Currents:
+Ir                                0                     0                     0
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                        R4                    R5            SWITCH4.R1
+
+Power AC Terms:
+PD                                0                     0                     0
+
+AC Pin Currents:
+Ir                                0                     0                     0
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                SWITCH4.R2            SWITCH4.R3            SWITCH4.R4
+
+Power AC Terms:
+PD                                0                     0                     0
+
+AC Pin Currents:
+Ir                                0                     0                     0
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                SWITCH4.R5                    R6                    R7
+
+Power AC Terms:
+PD                                0                     0                     0
+
+AC Pin Currents:
+Ir                                0                     0                     0
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                        R8                    R9              MOTOR5.R
+
+Power AC Terms:
+PD                                0                     0                     0
+
+AC Pin Currents:
+Ir                                0                     0                     0
+
+Device Variables:
+tc1                          0.000                 0.000                 0.000 
+tc2                          0.000                 0.000                 0.000 
+
+
+Instance:                  MOTOR5.R
+
+Power AC Terms:
+PD                                0
+
+AC Pin Currents:
+Ir                                0
+
+Device Variables:
+tc1                          0.000 
+tc2                          0.000 
+
+
+
+AC values for Inductor (Mag, Degrees)
+=====================================
+Instance:                  MOTOR5.L
+
+Power AC Terms:
+PS                                0
+
+AC Pin Currents:
+Il                                0
+
+Device Variables:
+ic                           0.000 
+
+
+
+AC values for Function Source (Mag, Degrees)
+============================================
+Instance:       MOTOR5.NFVVelocity
+
+Power AC Terms:
+PG                               0
+
+AC Pin Currents:
+ISource                          0
+
+
+
+AC values for SPICE Source (Mag, Degrees)
+=========================================
+Instance:                       V1              METER3.V            SWITCH4.V1
+
+Power AC Terms:
+PG                               0                     0                     0
+
+AC Pin Currents:
+ISource                          0                     0                     0
+
+
+Instance:               SWITCH4.V2            SWITCH4.V3             MOTOR5.V1
+
+Power AC Terms:
+PG                               0                     0                     0
+
+AC Pin Currents:
+ISource                          0                     0                     0
+
+
+Instance:                       V2
+
+Power AC Terms:
+PG                               0
+
+AC Pin Currents:
+ISource                          0
+
+

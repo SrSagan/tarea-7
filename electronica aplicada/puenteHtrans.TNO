@@ -1,0 +1,4761 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.5 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                    Transient Analysis of puenteHtrans                    ***
+***                           10/1/2022 3:54:03 PM                           ***
+********************************************************************************
+Limits
+======
+Maximum Run Time           1u
+Output Start Time (tstart) 0
+Maximum Time Step          0
+Number of Points           51
+Temperature                Linear 27
+Retrace Runs               1
+Run Options                Normal
+State Variables            Zero
+Operating Point            On
+Operating Point Only       Off
+Auto Scale Ranges          On
+Accumulate Plots           Off
+Fixed Time Step            Off
+Periodic Steady State      Off
+Ignore Expression Errors   Off
+
+Stepping Options
+================
+Stepping is Nested
+
+Step What  R5 value
+From       100
+To         10k
+Step Value 500
+Method     Linear
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=100                     ***
+*****************************************************
+
+Temperature=27 R5=100 
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2            67.005m  3           959.643m 
+4            11.112   5           417.605m  6            11.045  
+7            11.562   B            22.089u  A            11.562  
+10           11.045u  D           417.605m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC              10.004         -2.587K
+BETAAC              92.503         99.997 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  46.468         39.761n
+
+Current Terms:
+IB                 110.401m      -406.023f
+IC                   1.104          1.050n
+
+Resistance Terms:
+RPI                  1.991          2.515G
+RX                   0.000          0.000 
+RO                 265.522m         1.000T
+
+Voltage Terms:
+VBE                959.643m       417.605m
+VBC                892.638m       -10.694 
+VCE                 67.005m        11.112 
+
+Frequency Terms:
+FT               7.396E+020       632.815G
+
+Power DC Terms:
+PD                 179.950m        11.669n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 110.401m      -406.023f
+Ic                   1.104          1.050n
+Ie                  -1.215         -1.050n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC             100.000        201.308 
+BETAAC             100.000         99.999 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  42.702         89.171n
+
+Current Terms:
+IB                  11.045m        11.573p
+IC                   1.104          2.330n
+
+Resistance Terms:
+RPI                  2.342          1.121G
+RX                   0.000          0.000 
+RO                 950.998G         1.000T
+
+Voltage Terms:
+VBE               -955.441m      -438.495m
+VBC                -66.983m        11.495 
+VCE               -888.459m       -11.933 
+
+Frequency Terms:
+FT               6.796E+020         1.419T
+
+Power DC Terms:
+PD                 991.814m        27.806n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.045m       -11.573p
+Ic                  -1.104         -2.330n
+Ie                   1.115          2.341n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                    11.045         11.045u        11.561         22.089u
+Power DC Terms:
+PD                   12.198        121.982n       133.668f     4.879E-022
+
+DC Pin Currents:
+Ir                    1.104         11.045m        11.561f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.562         11.045u       -11.045u     4.948E-022
+Power DC Terms:
+PD                  133.668p     1.220E-022       121.982n     2.448E-055
+
+DC Pin Currents:
+Ir                   11.562p         0.011f       -11.045m     4.948E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                   -11.045        -11.582       -110.401u       417.605m
+Power DC Terms:
+PD                  121.982p       134.149f        12.188u       174.394f
+
+DC Pin Currents:
+Ir                  -11.045p       -11.582f      -110.401m       417.605f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000        110.401u        12.000 
+Power DC Terms:
+PD                  143.995p       143.997p        12.188u       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p       110.401m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -406.023p       -11.045         11.573n       -11.040 
+Power DC Terms:
+PD                1.649E-022       121.982m     1.339E-019         1.219 
+
+DC Pin Currents:
+Ir                 -406.023f       -11.045m        11.573p      -110.401m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000     -3.388E-021
+Power DC Terms:
+PG                  14.711          0.000          0.000     -3.742E-023
+
+DC Pin Currents:
+ISource             -1.226         11.045m        11.573p       -11.045m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V               -4.948E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG              -5.464E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.045m       -11.047p       406.023f      -110.401m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                    1.776f         0.000 
+Power DC Terms:
+PG                  -0.196f         0.000 
+
+DC Pin Currents:
+ISource            110.401m       110.401m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=600                     ***
+*****************************************************
+
+Temperature=27 R5=600 
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2           130.446m  3           955.777m 
+4            11.175   5           417.764m  6            11.045  
+7            11.562   B            22.089u  A            11.562  
+10           11.045u  D           417.764m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC              60.002         -2.601K
+BETAAC              99.355         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  42.981         40.005n
+
+Current Terms:
+IB                  18.407m      -406.181f
+IC                   1.104          1.057n
+
+Resistance Terms:
+RPI                  2.312          2.500G
+RX                   0.000          0.000 
+RO                   3.583          1.000T
+
+Voltage Terms:
+VBE                955.777m       417.764m
+VBC                825.331m       -10.757 
+VCE                130.446m        11.175 
+
+Frequency Terms:
+FT               6.841E+020       636.699G
+
+Power DC Terms:
+PD                 161.665m        11.808n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                  18.407m      -406.181f
+Ic                   1.104          1.057n
+Ie                  -1.123         -1.056n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC             100.000        200.749 
+BETAAC             100.000         99.999 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  42.702         88.926n
+
+Current Terms:
+IB                  11.045m        11.573p
+IC                   1.104          2.323n
+
+Resistance Terms:
+RPI                  2.342          1.125G
+RX                   0.000          0.000 
+RO                 625.462G         1.000T
+
+Voltage Terms:
+VBE               -955.441m      -438.424m
+VBC               -130.424m        11.431 
+VCE               -825.017m       -11.870 
+
+Frequency Terms:
+FT               6.796E+020         1.415T
+
+Power DC Terms:
+PD                 921.746m        27.582n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.045m       -11.573p
+Ic                  -1.104         -2.323n
+Ie                   1.115          2.335n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                    11.045         11.045u        11.562         22.089u
+Power DC Terms:
+PD                   12.198        121.982n       133.670f     4.879E-022
+
+DC Pin Currents:
+Ir                    1.104         11.045m        11.562f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.562         11.045u       -11.045u     4.237E-022
+Power DC Terms:
+PD                  133.670p     1.220E-022       121.982n     1.795E-055
+
+DC Pin Currents:
+Ir                   11.562p         0.011f       -11.045m     4.237E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                   -11.045        -11.582        -18.407u       417.764m
+Power DC Terms:
+PD                  121.982p       134.148f       338.817n       174.526f
+
+DC Pin Currents:
+Ir                  -11.045p       -11.582f       -18.407m       417.764f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000         18.407u        12.000 
+Power DC Terms:
+PD                  143.999p       144.000p       338.817n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p        18.407m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -406.181p       -11.045         11.573n       -11.044 
+Power DC Terms:
+PD                1.650E-022       121.982m     1.339E-019       203.290m
+
+DC Pin Currents:
+Ir                 -406.181f       -11.045m        11.573p       -18.407m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000     -3.388E-021
+Power DC Terms:
+PG                  13.607          0.000          0.000     -3.742E-023
+
+DC Pin Currents:
+ISource             -1.134         11.045m        11.573p       -11.045m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V               -4.237E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG              -4.679E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.045m       -11.044p       406.181f       -18.407m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -5.329f         0.000 
+Power DC Terms:
+PG                   0.098f         0.000 
+
+DC Pin Currents:
+ISource             18.407m        18.407m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=1.1K                    ***
+*****************************************************
+
+Temperature=27 R5=1.1K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2             1.778   3           952.982m 
+4            11.821   5           419.322m  6            11.047  
+7            11.563   B            22.094u  A            11.563  
+10           11.047u  D           419.322m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.752K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  38.829         42.490n
+
+Current Terms:
+IB                  10.043m      -407.742f
+IC                   1.004          1.122n
+
+Resistance Terms:
+RPI                  2.575          2.353G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                952.982m       419.322m
+VBC               -825.065m       -11.401 
+VCE                  1.778         11.821 
+
+Frequency Terms:
+FT               6.180E+020       676.245G
+
+Power DC Terms:
+PD                   1.795         13.265n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                  10.043m      -407.742f
+Ic                   1.004          1.122n
+Ie                  -1.014         -1.122n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              90.910        186.231 
+BETAAC              99.902         99.999 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  38.867         82.571n
+
+Current Terms:
+IB                  11.047m        11.575p
+IC                   1.004          2.156n
+
+Resistance Terms:
+RPI                  2.570          1.211G
+RX                   0.000          0.000 
+RO                  26.271          1.000T
+
+Voltage Terms:
+VBE               -953.033m      -436.506m
+VBC               -773.805m         9.785 
+VCE               -179.228m       -10.222 
+
+Frequency Terms:
+FT               6.186E+020         1.314T
+
+Power DC Terms:
+PD                 190.522m        22.040n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.047m       -11.575p
+Ic                  -1.004         -2.156n
+Ie                   1.015          2.167n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                    10.043         11.047u        11.563         22.094u
+Power DC Terms:
+PD                   10.086        122.035n       133.714f     4.881E-022
+
+DC Pin Currents:
+Ir                    1.004         11.047m        11.563f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.563         11.047u       -11.047u     1.999E-022
+Power DC Terms:
+PD                  133.714p     1.220E-022       122.035n     3.997E-056
+
+DC Pin Currents:
+Ir                   11.563p         0.011f       -11.047m     1.999E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                   -10.043        -11.581        -10.043u       419.322m
+Power DC Terms:
+PD                  100.856p       134.112f       100.856n       175.831f
+
+DC Pin Currents:
+Ir                  -10.043p       -11.581f       -10.043m       419.322f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000         10.043u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p       100.856n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p        10.043m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.741p       -11.047         11.575n       -11.047 
+Power DC Terms:
+PD                1.663E-022       122.035m     1.340E-019       110.942m
+
+DC Pin Currents:
+Ir                 -407.741f       -11.047m        11.575p       -10.043m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000     -1.694E-021
+Power DC Terms:
+PG                  12.304          0.000          0.000     -1.871E-023
+
+DC Pin Currents:
+ISource             -1.025         11.047m        11.575p       -11.047m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V               -1.999E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG              -2.209E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.047m       -10.047p       407.741f       -10.043m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -1.776f         0.000 
+Power DC Terms:
+PG                   0.018f         0.000 
+
+DC Pin Currents:
+ISource             10.043m        10.043m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=1.6K                    ***
+*****************************************************
+
+Temperature=27 R5=1.6K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2             4.956   3           943.314m 
+4            11.867   5           419.430m  6            11.056  
+7            11.568   B            22.113u  A            11.568  
+10           11.056u  D           419.430m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.763K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  26.718         42.667n
+
+Current Terms:
+IB                   6.910m      -407.849f
+IC                 691.042m         1.127n
+
+Resistance Terms:
+RPI                  3.743          2.344G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                943.314m       419.430m
+VBC                 -4.013        -11.447 
+VCE                  4.956         11.867 
+
+Frequency Terms:
+FT               4.252E+020       679.067G
+
+Power DC Terms:
+PD                   3.432         13.372n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   6.910m      -407.849f
+Ic                 691.042m         1.127n
+Ie                -697.952m        -1.126n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              62.502        158.238 
+BETAAC              99.419         99.999 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  26.875         70.314n
+
+Current Terms:
+IB                  11.056m        11.579p
+IC                 691.042m         1.832n
+
+Resistance Terms:
+RPI                  3.699          1.422G
+RX                   0.000          0.000 
+RO                   6.363          1.000T
+
+Voltage Terms:
+VBE               -943.616m      -432.350m
+VBC               -810.478m         6.611 
+VCE               -133.138m        -7.044 
+
+Frequency Terms:
+FT               4.277E+020         1.119T
+
+Power DC Terms:
+PD                 102.437m        12.911n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.056m       -11.579p
+Ic                -691.042m        -1.832n
+Ie                 702.098m         1.844n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     6.910         11.056u        11.568         22.113u
+Power DC Terms:
+PD                    4.775        122.243n       133.810f     4.890E-022
+
+DC Pin Currents:
+Ir                  691.042m        11.056m        11.568f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.568         11.056u       -11.056u    -5.678E-022
+Power DC Terms:
+PD                  133.811p     1.222E-022       122.243n     3.224E-055
+
+DC Pin Currents:
+Ir                   11.568p         0.011f       -11.056m    -5.678E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -6.910        -11.581         -6.910u       419.430m
+Power DC Terms:
+PD                   47.754p       134.109f        47.754n       175.921f
+
+DC Pin Currents:
+Ir                   -6.910p       -11.581f        -6.910m       419.430f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          6.910u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p        47.754n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         6.910m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.849p       -11.056         11.579n       -11.057 
+Power DC Terms:
+PD                1.663E-022       122.243m     1.341E-019        76.406m
+
+DC Pin Currents:
+Ir                 -407.849f       -11.056m        11.579p        -6.910m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000     -1.694E-021
+Power DC Terms:
+PG                   8.508          0.000          0.000     -1.873E-023
+
+DC Pin Currents:
+ISource           -709.009m        11.056m        11.579p       -11.056m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V                5.678E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG               6.278E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.056m        -6.908p       407.849f        -6.910m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -1.776f         0.000 
+Power DC Terms:
+PG                   0.012f         0.000 
+
+DC Pin Currents:
+ISource              6.910m         6.910m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=2.1K                    ***
+*****************************************************
+
+Temperature=27 R5=2.1K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2             6.614   3           936.297m 
+4            11.882   5           419.466m  6            11.063  
+7            11.570   B            22.126u  A            11.570  
+10           11.063u  D           419.466m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.767K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  20.370         42.726n
+
+Current Terms:
+IB                   5.268m      -407.885f
+IC                 526.843m         1.128n
+
+Resistance Terms:
+RPI                  4.909          2.340G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                936.297m       419.466m
+VBC                 -5.678        -11.463 
+VCE                  6.614         11.882 
+
+Frequency Terms:
+FT               3.242E+020       680.012G
+
+Power DC Terms:
+PD                   3.489         13.408n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   5.268m      -407.885f
+Ic                 526.843m         1.128n
+Ie                -532.111m        -1.128n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              47.621        143.651 
+BETAAC              98.944         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  20.589         63.925n
+
+Current Terms:
+IB                  11.063m        11.582p
+IC                 526.843m         1.664n
+
+Resistance Terms:
+RPI                  4.806          1.564G
+RX                   0.000          0.000 
+RO                   4.553          1.000T
+
+Voltage Terms:
+VBE               -936.849m      -429.886m
+VBC               -819.138m         4.956 
+VCE               -117.710m        -5.386 
+
+Frequency Terms:
+FT               3.277E+020         1.017T
+
+Power DC Terms:
+PD                  72.379m         8.966n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.063m       -11.582p
+Ic                -526.843m        -1.664n
+Ie                 537.906m         1.675n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     5.268         11.063u        11.570         22.126u
+Power DC Terms:
+PD                    2.776        122.393n       133.867f     4.896E-022
+
+DC Pin Currents:
+Ir                  526.843m        11.063m        11.570f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.570         11.063u       -11.063u     3.565E-022
+Power DC Terms:
+PD                  133.868p     1.224E-022       122.393n     1.271E-055
+
+DC Pin Currents:
+Ir                   11.570p         0.011f       -11.063m     3.565E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -5.268        -11.581         -5.268u       419.466m
+Power DC Terms:
+PD                   27.756p       134.109f        27.756n       175.952f
+
+DC Pin Currents:
+Ir                   -5.268p       -11.581f        -5.268m       419.466f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          5.268u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p        27.756n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         5.268m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.885p       -11.063         11.582n       -11.064 
+Power DC Terms:
+PD                1.664E-022       122.393m     1.341E-019        58.288m
+
+DC Pin Currents:
+Ir                 -407.885f       -11.063m        11.582p        -5.268m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000     -1.694E-021
+Power DC Terms:
+PG                   6.518          0.000          0.000     -1.874E-023
+
+DC Pin Currents:
+ISource           -543.174m        11.063m        11.582p       -11.063m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V               -3.565E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG              -3.944E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.063m        -5.270p       407.885f        -5.268m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -1.776f         0.000 
+Power DC Terms:
+PG                   0.009f         0.000 
+
+DC Pin Currents:
+ISource              5.268m         5.268m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=2.6K                    ***
+*****************************************************
+
+Temperature=27 R5=2.6K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2             7.634   3           930.786m 
+4            11.892   5           419.488m  6            11.068  
+7            11.572   B            22.137u  A            11.572  
+10           11.068u  D           419.488m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.769K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  16.461         42.763n
+
+Current Terms:
+IB                   4.257m      -407.907f
+IC                 425.739m         1.129n
+
+Resistance Terms:
+RPI                  6.075          2.338G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                930.786m       419.488m
+VBC                 -6.704        -11.472 
+VCE                  7.634         11.892 
+
+Frequency Terms:
+FT               2.620E+020       680.591G
+
+Power DC Terms:
+PD                   3.254         13.430n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   4.257m      -407.907f
+Ic                 425.739m         1.129n
+Ie                -429.996m        -1.129n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              38.464        134.673 
+BETAAC              98.479         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  16.719         59.992n
+
+Current Terms:
+IB                  11.068m        11.583p
+IC                 425.739m         1.560n
+
+Resistance Terms:
+RPI                  5.890          1.667G
+RX                   0.000          0.000 
+RO                   3.873          1.000T
+
+Voltage Terms:
+VBE               -931.585m      -428.244m
+VBC               -823.318m         3.937 
+VCE               -108.267m        -4.366 
+
+Frequency Terms:
+FT               2.661E+020       954.809G
+
+Power DC Terms:
+PD                  56.405m         6.815n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.068m       -11.583p
+Ic                -425.739m        -1.560n
+Ie                 436.807m         1.572n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     4.257         11.068u        11.572         22.137u
+Power DC Terms:
+PD                    1.813        122.509n       133.905f     4.900E-022
+
+DC Pin Currents:
+Ir                  425.739m        11.068m        11.572f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.572         11.068u       -11.068u     4.083E-022
+Power DC Terms:
+PD                  133.906p     1.225E-022       122.509n     1.667E-055
+
+DC Pin Currents:
+Ir                   11.572p         0.011f       -11.068m     4.083E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -4.257        -11.581         -4.257u       419.488m
+Power DC Terms:
+PD                   18.125p       134.108f        18.125n       175.970f
+
+DC Pin Currents:
+Ir                   -4.257p       -11.581f        -4.257m       419.488f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          4.257u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p        18.125n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         4.257m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.907p       -11.068         11.583n       -11.069 
+Power DC Terms:
+PD                1.664E-022       122.509m     1.342E-019        47.126m
+
+DC Pin Currents:
+Ir                 -407.907f       -11.068m        11.583p        -4.257m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000     -3.388E-021
+Power DC Terms:
+PG                   5.293          0.000          0.000     -3.750E-023
+
+DC Pin Currents:
+ISource           -441.064m        11.068m        11.583p       -11.068m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V               -4.083E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG              -4.519E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.068m        -4.258p       407.907f        -4.257m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -1.776f         0.000 
+Power DC Terms:
+PG                   0.008f         0.000 
+
+DC Pin Currents:
+ISource              4.257m         4.257m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=3.1K                    ***
+*****************************************************
+
+Temperature=27 R5=3.1K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2             8.326   3           926.247m 
+4            11.899   5           419.504m  6            11.073  
+7            11.573   B            22.145u  A            11.573  
+10           11.073u  D           419.504m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.770K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  13.811         42.789n
+
+Current Terms:
+IB                   3.572m      -407.923f
+IC                 357.218m         1.130n
+
+Resistance Terms:
+RPI                  7.240          2.337G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                926.247m       419.504m
+VBC                 -7.400        -11.479 
+VCE                  8.326         11.899 
+
+Frequency Terms:
+FT               2.198E+020       681.006G
+
+Power DC Terms:
+PD                   2.978         13.446n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   3.572m      -407.923f
+Ic                 357.218m         1.130n
+Ie                -360.790m        -1.130n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              32.261        128.587 
+BETAAC              98.023         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  14.096         57.326n
+
+Current Terms:
+IB                  11.073m        11.585p
+IC                 357.218m         1.490n
+
+Resistance Terms:
+RPI                  6.954          1.744G
+RX                   0.000          0.000 
+RO                   3.517          1.000T
+
+Voltage Terms:
+VBE               -927.290m      -427.068m
+VBC               -825.812m         3.247 
+VCE               -101.479m        -3.674 
+
+Frequency Terms:
+FT               2.243E+020       912.373G
+
+Power DC Terms:
+PD                  46.518m         5.477n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.073m       -11.585p
+Ic                -357.218m        -1.490n
+Ie                 368.290m         1.501n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     3.572         11.073u        11.573         22.145u
+Power DC Terms:
+PD                    1.276        122.604n       133.932f     4.904E-022
+
+DC Pin Currents:
+Ir                  357.218m        11.073m        11.573f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.573         11.073u       -11.073u    -7.676E-022
+Power DC Terms:
+PD                  133.933p     1.226E-022       122.604n     5.892E-055
+
+DC Pin Currents:
+Ir                   11.573p         0.011f       -11.073m    -7.676E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -3.572        -11.580         -3.572u       419.504m
+Power DC Terms:
+PD                   12.760p       134.108f        12.760n       175.983f
+
+DC Pin Currents:
+Ir                   -3.572p       -11.580f        -3.572m       419.504f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          3.572u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p        12.760n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         3.572m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.923p       -11.073         11.585n       -11.074 
+Power DC Terms:
+PD                1.664E-022       122.604m     1.342E-019        39.557m
+
+DC Pin Currents:
+Ir                 -407.923f       -11.073m        11.585p        -3.572m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000          0.000 
+Power DC Terms:
+PG                   4.462          0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource           -371.862m        11.073m        11.585p       -11.073m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V                7.676E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG               8.499E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.073m        -3.573p       407.923f        -3.572m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -1.776f         0.000 
+Power DC Terms:
+PG                   0.006f         0.000 
+
+DC Pin Currents:
+ISource              3.572m         3.572m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=3.6K                    ***
+*****************************************************
+
+Temperature=27 R5=3.6K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2             8.827   3           922.388m 
+4            11.904   5           419.516m  6            11.076  
+7            11.574   B            22.153u  A            11.574  
+10           11.076u  D           419.516m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.772K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  11.897         42.809n
+
+Current Terms:
+IB                   3.077m      -407.935f
+IC                 307.711m         1.131n
+
+Resistance Terms:
+RPI                  8.405          2.336G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                922.388m       419.516m
+VBC                 -7.904        -11.484 
+VCE                  8.827         11.904 
+
+Frequency Terms:
+FT               1.893E+020       681.330G
+
+Power DC Terms:
+PD                   2.719         13.458n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   3.077m      -407.935f
+Ic                 307.711m         1.131n
+Ie                -310.788m        -1.130n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              27.781        124.187 
+BETAAC              97.575         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  12.200         55.398n
+
+Current Terms:
+IB                  11.076m        11.585p
+IC                 307.711m         1.439n
+
+Resistance Terms:
+RPI                  7.998          1.805G
+RX                   0.000          0.000 
+RO                   3.298          1.000T
+
+Voltage Terms:
+VBE               -923.674m      -426.184m
+VBC               -827.477m         2.747 
+VCE                -96.198m        -3.173 
+
+Frequency Terms:
+FT               1.942E+020       881.694G
+
+Power DC Terms:
+PD                  39.832m         4.571n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.076m       -11.585p
+Ic                -307.711m        -1.439n
+Ie                 318.788m         1.450n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     3.077         11.076u        11.574         22.153u
+Power DC Terms:
+PD                  946.862m       122.684n       133.953f     4.907E-022
+
+DC Pin Currents:
+Ir                  307.711m        11.076m        11.574f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.574         11.076u       -11.076u     4.183E-023
+Power DC Terms:
+PD                  133.953p     1.227E-022       122.684n     1.750E-057
+
+DC Pin Currents:
+Ir                   11.574p         0.011f       -11.076m     4.183E-035
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -3.077        -11.580         -3.077u       419.516m
+Power DC Terms:
+PD                    9.469p       134.108f         9.469n       175.994f
+
+DC Pin Currents:
+Ir                   -3.077p       -11.580f        -3.077m       419.516f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          3.077u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p         9.469n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         3.077m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.935p       -11.076         11.585n       -11.078 
+Power DC Terms:
+PD                1.664E-022       122.684m     1.342E-019        34.087m
+
+DC Pin Currents:
+Ir                 -407.935f       -11.076m        11.585p        -3.077m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000      1.694E-021
+Power DC Terms:
+PG                   3.862          0.000          0.000      1.876E-023
+
+DC Pin Currents:
+ISource           -321.865m        11.076m        11.585p       -11.076m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V               -4.183E-023         0.000          0.000          0.000 
+Power DC Terms:
+PG              -4.633E-025         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.076m        -3.077p       407.935f        -3.077m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -1.776f         0.000 
+Power DC Terms:
+PG                   0.005f         0.000 
+
+DC Pin Currents:
+ISource              3.077m         3.077m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=4.1K                    ***
+*****************************************************
+
+Temperature=27 R5=4.1K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2             9.205   3           919.033m 
+4            11.908   5           419.526m  6            11.079  
+7            11.575   B            22.159u  A            11.575  
+10           11.079u  D           419.526m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.773K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  10.449         42.826n
+
+Current Terms:
+IB                   2.703m      -407.945f
+IC                 270.267m         1.131n
+
+Resistance Terms:
+RPI                  9.570          2.335G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                919.033m       419.526m
+VBC                 -8.286        -11.489 
+VCE                  9.205         11.908 
+
+Frequency Terms:
+FT               1.663E+020       681.594G
+
+Power DC Terms:
+PD                   2.490         13.469n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   2.703m      -407.945f
+Ic                 270.267m         1.131n
+Ie                -272.970m        -1.131n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              24.394        120.857 
+BETAAC              97.135         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  10.767         53.939n
+
+Current Terms:
+IB                  11.079m        11.586p
+IC                 270.267m         1.400n
+
+Resistance Terms:
+RPI                  9.022          1.854G
+RX                   0.000          0.000 
+RO                   3.149          1.000T
+
+Voltage Terms:
+VBE               -920.559m      -425.493m
+VBC               -828.669m         2.369 
+VCE                -91.889m        -2.795 
+
+Frequency Terms:
+FT               1.714E+020       858.473G
+
+Power DC Terms:
+PD                  35.034m         3.918n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.079m       -11.586p
+Ic                -270.267m        -1.400n
+Ie                 281.347m         1.412n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     2.703         11.079u        11.574         22.159u
+Power DC Terms:
+PD                  730.444m       122.754n       133.969f     4.910E-022
+
+DC Pin Currents:
+Ir                  270.267m        11.079m        11.574f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.575         11.079u       -11.079u    -6.485E-022
+Power DC Terms:
+PD                  133.969p     1.228E-022       122.754n     4.205E-055
+
+DC Pin Currents:
+Ir                   11.575p         0.011f       -11.079m    -6.485E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -2.703        -11.580         -2.703u       419.526m
+Power DC Terms:
+PD                    7.304p       134.107f         7.304n       176.002f
+
+DC Pin Currents:
+Ir                   -2.703p       -11.580f        -2.703m       419.526f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          2.703u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p         7.304n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         2.703m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.945p       -11.079         11.586n       -11.081 
+Power DC Terms:
+PD                1.664E-022       122.754m     1.342E-019        29.948m
+
+DC Pin Currents:
+Ir                 -407.945f       -11.079m        11.586p        -2.703m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000      1.694E-021
+Power DC Terms:
+PG                   3.409          0.000          0.000      1.877E-023
+
+DC Pin Currents:
+ISource           -284.049m        11.079m        11.586p       -11.079m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V                6.485E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG               7.185E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.079m        -2.702p       407.945f        -2.703m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -1.776f         0.000 
+Power DC Terms:
+PG                   0.005f         0.000 
+
+DC Pin Currents:
+ISource              2.703m         2.703m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=4.6K                    ***
+*****************************************************
+
+Temperature=27 R5=4.6K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2             9.502   3           916.063m 
+4            11.912   5           419.534m  6            11.082  
+7            11.575   B            22.164u  A            11.575  
+10           11.082u  D           419.534m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.773K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   9.316         42.840n
+
+Current Terms:
+IB                   2.410m      -407.954f
+IC                 240.955m         1.131n
+
+Resistance Terms:
+RPI                 10.734          2.334G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                916.063m       419.534m
+VBC                 -8.586        -11.492 
+VCE                  9.502         11.912 
+
+Frequency Terms:
+FT               1.483E+020       681.816G
+
+Power DC Terms:
+PD                   2.292         13.477n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   2.410m      -407.954f
+Ic                 240.955m         1.131n
+Ie                -243.365m        -1.131n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              21.743        118.249 
+BETAAC              96.704         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   9.645         52.796n
+
+Current Terms:
+IB                  11.082m        11.587p
+IC                 240.955m         1.370n
+
+Resistance Terms:
+RPI                 10.026          1.894G
+RX                   0.000          0.000 
+RO                   3.042          1.000T
+
+Voltage Terms:
+VBE               -917.827m      -424.939m
+VBC               -829.567m         2.073 
+VCE                -88.260m        -2.498 
+
+Frequency Terms:
+FT               1.535E+020       840.281G
+
+Power DC Terms:
+PD                  31.438m         3.427n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.082m       -11.587p
+Ic                -240.955m        -1.370n
+Ie                 252.037m         1.382n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     2.410         11.082u        11.575         22.164u
+Power DC Terms:
+PD                  580.593m       122.814n       133.982f     4.913E-022
+
+DC Pin Currents:
+Ir                  240.955m        11.082m        11.575f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.575         11.082u       -11.082u     4.916E-022
+Power DC Terms:
+PD                  133.982p     1.228E-022       122.814n     2.417E-055
+
+DC Pin Currents:
+Ir                   11.575p         0.011f       -11.082m     4.916E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -2.410        -11.580         -2.410u       419.534m
+Power DC Terms:
+PD                    5.806p       134.107f         5.806n       176.009f
+
+DC Pin Currents:
+Ir                   -2.410p       -11.580f        -2.410m       419.534f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          2.410u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p         5.806n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         2.410m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.954p       -11.082         11.587n       -11.084 
+Power DC Terms:
+PD                1.664E-022       122.814m     1.343E-019        26.707m
+
+DC Pin Currents:
+Ir                 -407.954f       -11.082m        11.587p        -2.410m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000          0.000 
+Power DC Terms:
+PG                   3.053          0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource           -254.447m        11.082m        11.587p       -11.082m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V               -4.916E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG              -5.448E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.082m        -2.411p       407.954f        -2.410m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                    1.776f         0.000 
+Power DC Terms:
+PG                  -0.004f         0.000 
+
+DC Pin Currents:
+ISource              2.410m         2.410m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=5.1K                    ***
+*****************************************************
+
+Temperature=27 R5=5.1K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2             9.741   3           913.401m 
+4            11.915   5           419.542m  6            11.085  
+7            11.576   B            22.169u  A            11.576  
+10           11.085u  D           419.542m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.774K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   8.405         42.852n
+
+Current Terms:
+IB                   2.174m      -407.961f
+IC                 217.384m         1.132n
+
+Resistance Terms:
+RPI                 11.898          2.334G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                913.401m       419.542m
+VBC                 -8.828        -11.495 
+VCE                  9.741         11.915 
+
+Frequency Terms:
+FT               1.338E+020       682.008G
+
+Power DC Terms:
+PD                   2.120         13.484n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   2.174m      -407.961f
+Ic                 217.384m         1.132n
+Ie                -219.558m        -1.131n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              19.611        116.150 
+BETAAC              96.280         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   8.743         51.877n
+
+Current Terms:
+IB                  11.085m        11.587p
+IC                 217.384m         1.346n
+
+Resistance Terms:
+RPI                 11.013          1.928G
+RX                   0.000          0.000 
+RO                   2.961          1.000T
+
+Voltage Terms:
+VBE               -915.400m      -424.485m
+VBC               -830.268m         1.834 
+VCE                -85.132m        -2.259 
+
+Frequency Terms:
+FT               1.391E+020       825.640G
+
+Power DC Terms:
+PD                  28.653m         3.045n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.085m       -11.587p
+Ic                -217.384m        -1.346n
+Ie                 228.469m         1.357n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     2.174         11.085u        11.576         22.169u
+Power DC Terms:
+PD                  472.559m       122.868n       133.992f     4.915E-022
+
+DC Pin Currents:
+Ir                  217.384m        11.085m        11.576f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.576         11.085u       -11.085u     3.700E-023
+Power DC Terms:
+PD                  133.993p     1.229E-022       122.868n     1.369E-057
+
+DC Pin Currents:
+Ir                   11.576p         0.011f       -11.085m     3.700E-035
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -2.174        -11.580         -2.174u       419.542m
+Power DC Terms:
+PD                    4.726p       134.107f         4.726n       176.015f
+
+DC Pin Currents:
+Ir                   -2.174p       -11.580f        -2.174m       419.542f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          2.174u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p         4.726n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         2.174m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.961p       -11.085         11.587n       -11.087 
+Power DC Terms:
+PD                1.664E-022       122.868m     1.343E-019        24.101m
+
+DC Pin Currents:
+Ir                 -407.961f       -11.085m        11.587p        -2.174m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000          0.000 
+Power DC Terms:
+PG                   2.768          0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource           -230.643m        11.085m        11.587p       -11.085m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V               -3.700E-023         0.000          0.000          0.000 
+Power DC Terms:
+PG              -4.101E-025         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.085m        -2.174p       407.961f        -2.174m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -1.776f         0.000 
+Power DC Terms:
+PG                   0.004f         0.000 
+
+DC Pin Currents:
+ISource              2.174m         2.174m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=5.6K                    ***
+*****************************************************
+
+Temperature=27 R5=5.6K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2             9.937   3           910.987m 
+4            11.918   5           419.548m  6            11.087  
+7            11.576   B            22.174u  A            11.576  
+10           11.087u  D           419.548m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.775K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   7.656         42.862n
+
+Current Terms:
+IB                   1.980m      -407.968f
+IC                 198.018m         1.132n
+
+Resistance Terms:
+RPI                 13.062          2.333G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                910.987m       419.548m
+VBC                 -9.026        -11.498 
+VCE                  9.937         11.918 
+
+Frequency Terms:
+FT               1.219E+020       682.176G
+
+Power DC Terms:
+PD                   1.970         13.491n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   1.980m      -407.968f
+Ic                 198.018m         1.132n
+Ie                -199.998m        -1.132n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              17.861        114.424 
+BETAAC              95.864         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   8.001         51.120n
+
+Current Terms:
+IB                  11.087m        11.587p
+IC                 198.018m         1.326n
+
+Resistance Terms:
+RPI                 11.981          1.956G
+RX                   0.000          0.000 
+RO                   2.897          1.000T
+
+Voltage Terms:
+VBE               -913.220m      -424.105m
+VBC               -830.830m         1.638 
+VCE                -82.390m        -2.063 
+
+Frequency Terms:
+FT               1.273E+020       813.602G
+
+Power DC Terms:
+PD                  26.439m         2.740n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.087m       -11.587p
+Ic                -198.018m        -1.326n
+Ie                 209.105m         1.337n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     1.980         11.087u        11.576         22.174u
+Power DC Terms:
+PD                  392.111m       122.916n       134.001f     4.917E-022
+
+DC Pin Currents:
+Ir                  198.018m        11.087m        11.576f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.576         11.087u       -11.087u    -3.429E-022
+Power DC Terms:
+PD                  134.001p     1.229E-022       122.916n     1.176E-055
+
+DC Pin Currents:
+Ir                   11.576p         0.011f       -11.087m    -3.429E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -1.980        -11.580         -1.980u       419.548m
+Power DC Terms:
+PD                    3.921p       134.107f         3.921n       176.021f
+
+DC Pin Currents:
+Ir                   -1.980p       -11.580f        -1.980m       419.548f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          1.980u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p         3.921n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         1.980m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.968p       -11.087         11.587n       -11.089 
+Power DC Terms:
+PD                1.664E-022       122.916m     1.343E-019        21.958m
+
+DC Pin Currents:
+Ir                 -407.968f       -11.087m        11.587p        -1.980m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000          0.000 
+Power DC Terms:
+PG                   2.533          0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource           -211.085m        11.087m        11.587p       -11.087m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V                3.429E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG               3.802E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.087m        -1.980p       407.968f        -1.980m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -1.776f         0.000 
+Power DC Terms:
+PG                   0.004f         0.000 
+
+DC Pin Currents:
+ISource              1.980m         1.980m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=6.1K                    ***
+*****************************************************
+
+Temperature=27 R5=6.1K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2            10.102   3           908.781m 
+4            11.920   5           419.554m  6            11.089  
+7            11.576   B            22.177u  A            11.576  
+10           11.089u  D           419.554m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.775K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   7.030         42.872n
+
+Current Terms:
+IB                   1.818m      -407.973f
+IC                 181.823m         1.132n
+
+Resistance Terms:
+RPI                 14.225          2.332G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                908.781m       419.554m
+VBC                 -9.193        -11.500 
+VCE                 10.102         11.920 
+
+Frequency Terms:
+FT               1.119E+020       682.325G
+
+Power DC Terms:
+PD                   1.838         13.496n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   1.818m      -407.973f
+Ic                 181.823m         1.132n
+Ie                -183.641m        -1.132n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              16.397        112.979 
+BETAAC              95.456         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   7.381         50.487n
+
+Current Terms:
+IB                  11.089m        11.588p
+IC                 181.823m         1.309n
+
+Resistance Terms:
+RPI                 12.932          1.981G
+RX                   0.000          0.000 
+RO                   2.846          1.000T
+
+Voltage Terms:
+VBE               -911.245m      -423.783m
+VBC               -831.292m         1.474 
+VCE                -79.954m        -1.898 
+
+Frequency Terms:
+FT               1.175E+020       803.526G
+
+Power DC Terms:
+PD                  24.642m         2.490n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.089m       -11.588p
+Ic                -181.823m        -1.309n
+Ie                 192.912m         1.321n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     1.818         11.089u        11.576         22.177u
+Power DC Terms:
+PD                  330.597m       122.960n       134.009f     4.918E-022
+
+DC Pin Currents:
+Ir                  181.823m        11.089m        11.576f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.576         11.089u       -11.089u    -6.652E-022
+Power DC Terms:
+PD                  134.009p     1.230E-022       122.960n     4.425E-055
+
+DC Pin Currents:
+Ir                   11.576p         0.011f       -11.089m    -6.652E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -1.818        -11.580         -1.818u       419.554m
+Power DC Terms:
+PD                    3.306p       134.107f         3.306n       176.025f
+
+DC Pin Currents:
+Ir                   -1.818p       -11.580f        -1.818m       419.554f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          1.818u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p         3.306n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         1.818m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.973p       -11.089         11.588n       -11.091 
+Power DC Terms:
+PD                1.664E-022       122.960m     1.343E-019        20.166m
+
+DC Pin Currents:
+Ir                 -407.973f       -11.089m        11.588p        -1.818m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000          0.000 
+Power DC Terms:
+PG                   2.337          0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource           -194.730m        11.089m        11.588p       -11.089m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V                6.652E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG               7.376E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.089m        -1.818p       407.973f        -1.818m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -5.329f         0.000 
+Power DC Terms:
+PG                   0.010f         0.000 
+
+DC Pin Currents:
+ISource              1.818m         1.818m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=6.6K                    ***
+*****************************************************
+
+Temperature=27 R5=6.6K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2            10.241   3           906.748m 
+4            11.922   5           419.559m  6            11.091  
+7            11.576   B            22.181u  A            11.576  
+10           11.091u  D           419.559m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.776K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   6.499         42.880n
+
+Current Terms:
+IB                   1.681m      -407.978f
+IC                 168.080m         1.132n
+
+Resistance Terms:
+RPI                 15.388          2.332G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                906.748m       419.559m
+VBC                 -9.335        -11.503 
+VCE                 10.241         11.922 
+
+Frequency Terms:
+FT               1.034E+020       682.459G
+
+Power DC Terms:
+PD                   1.723         13.502n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   1.681m      -407.978f
+Ic                 168.080m         1.132n
+Ie                -169.760m        -1.132n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              15.155        111.752 
+BETAAC              95.054         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   6.855         49.949n
+
+Current Terms:
+IB                  11.091m        11.588p
+IC                 168.080m         1.295n
+
+Resistance Terms:
+RPI                 13.866          2.002G
+RX                   0.000          0.000 
+RO                   2.804          1.000T
+
+Voltage Terms:
+VBE               -909.442m      -423.506m
+VBC               -831.677m         1.335 
+VCE                -77.765m        -1.759 
+
+Frequency Terms:
+FT               1.091E+020       794.968G
+
+Power DC Terms:
+PD                  23.157m         2.282n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.091m       -11.588p
+Ic                -168.080m        -1.295n
+Ie                 179.170m         1.307n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     1.681         11.091u        11.576         22.181u
+Power DC Terms:
+PD                  282.507m       123.000n       134.015f     4.920E-022
+
+DC Pin Currents:
+Ir                  168.080m        11.091m        11.576f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.576         11.091u       -11.091u     7.519E-022
+Power DC Terms:
+PD                  134.015p     1.230E-022       123.000n     5.654E-055
+
+DC Pin Currents:
+Ir                   11.576p         0.011f       -11.091m     7.519E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -1.681        -11.580         -1.681u       419.559m
+Power DC Terms:
+PD                    2.825p       134.107f         2.825n       176.030f
+
+DC Pin Currents:
+Ir                   -1.681p       -11.580f        -1.681m       419.559f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          1.681u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p         2.825n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         1.681m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.978p       -11.091         11.588n       -11.093 
+Power DC Terms:
+PD                1.664E-022       123.000m     1.343E-019        18.645m
+
+DC Pin Currents:
+Ir                 -407.978f       -11.091m        11.588p        -1.681m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000     -1.694E-021
+Power DC Terms:
+PG                   2.170          0.000          0.000     -1.879E-023
+
+DC Pin Currents:
+ISource           -180.851m        11.091m        11.588p       -11.091m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V               -7.519E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG              -8.339E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.091m        -1.680p       407.978f        -1.681m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -1.776f         0.000 
+Power DC Terms:
+PG                   0.003f         0.000 
+
+DC Pin Currents:
+ISource              1.681m         1.681m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=7.1K                    ***
+*****************************************************
+
+Temperature=27 R5=7.1K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2            10.362   3           904.863m 
+4            11.924   5           419.563m  6            11.092  
+7            11.577   B            22.184u  A            11.577  
+10           11.092u  D           419.563m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.776K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   6.042         42.888n
+
+Current Terms:
+IB                   1.563m      -407.983f
+IC                 156.269m         1.133n
+
+Resistance Terms:
+RPI                 16.551          2.332G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                904.863m       419.563m
+VBC                 -9.457        -11.505 
+VCE                 10.362         11.924 
+
+Frequency Terms:
+FT               9.616E+019       682.580G
+
+Power DC Terms:
+PD                   1.621         13.506n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   1.563m      -407.983f
+Ic                 156.269m         1.133n
+Ie                -157.832m        -1.132n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              14.088        110.697 
+BETAAC              94.660         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   6.403         49.487n
+
+Current Terms:
+IB                  11.092m        11.588p
+IC                 156.269m         1.283n
+
+Resistance Terms:
+RPI                 14.783          2.021G
+RX                   0.000          0.000 
+RO                   2.768          1.000T
+
+Voltage Terms:
+VBE               -907.785m      -423.265m
+VBC               -832.004m         1.215 
+VCE                -75.780m        -1.638 
+
+Frequency Terms:
+FT               1.019E+020       787.609G
+
+Power DC Terms:
+PD                  21.911m         2.107n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.092m       -11.588p
+Ic                -156.269m        -1.283n
+Ie                 167.362m         1.294n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     1.563         11.092u        11.577         22.184u
+Power DC Terms:
+PD                  244.202m       123.037n       134.021f     4.921E-022
+
+DC Pin Currents:
+Ir                  156.269m        11.092m        11.577f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.577         11.092u       -11.092u     5.114E-022
+Power DC Terms:
+PD                  134.021p     1.230E-022       123.037n     2.615E-055
+
+DC Pin Currents:
+Ir                   11.577p         0.011f       -11.092m     5.114E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -1.563        -11.580         -1.563u       419.563m
+Power DC Terms:
+PD                    2.442p       134.106f         2.442n       176.033f
+
+DC Pin Currents:
+Ir                   -1.563p       -11.580f        -1.563m       419.563f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          1.563u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p         2.442n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         1.563m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.983p       -11.092         11.588n       -11.095 
+Power DC Terms:
+PD                1.665E-022       123.037m     1.343E-019        17.338m
+
+DC Pin Currents:
+Ir                 -407.983f       -11.092m        11.588p        -1.563m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000      1.694E-021
+Power DC Terms:
+PG                   2.027          0.000          0.000      1.879E-023
+
+DC Pin Currents:
+ISource           -168.924m        11.092m        11.588p       -11.092m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V               -5.114E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG              -5.672E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.092m        -1.562p       407.983f        -1.563m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -1.776f         0.000 
+Power DC Terms:
+PG                   0.003f         0.000 
+
+DC Pin Currents:
+ISource              1.563m         1.563m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=7.6K                    ***
+*****************************************************
+
+Temperature=27 R5=7.6K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2            10.466   3           903.107m 
+4            11.926   5           419.568m  6            11.094  
+7            11.577   B            22.187u  A            11.577  
+10           11.094u  D           419.568m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.777K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   5.645         42.895n
+
+Current Terms:
+IB                   1.460m      -407.987f
+IC                 146.012m         1.133n
+
+Resistance Terms:
+RPI                 17.714          2.331G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                903.107m       419.568m
+VBC                 -9.563        -11.506 
+VCE                 10.466         11.926 
+
+Frequency Terms:
+FT               8.985E+019       682.691G
+
+Power DC Terms:
+PD                   1.529         13.510n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   1.460m      -407.987f
+Ic                 146.012m         1.133n
+Ie                -147.472m        -1.132n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              13.162        109.780 
+BETAAC              94.272         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   6.010         49.085n
+
+Current Terms:
+IB                  11.094m        11.589p
+IC                 146.012m         1.272n
+
+Resistance Terms:
+RPI                 15.685          2.037G
+RX                   0.000          0.000 
+RO                   2.738          1.000T
+
+Voltage Terms:
+VBE               -906.254m      -423.054m
+VBC               -832.285m         1.111 
+VCE                -73.969m        -1.534 
+
+Frequency Terms:
+FT               9.566E+019       781.211G
+
+Power DC Terms:
+PD                  20.854m         1.957n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.094m       -11.589p
+Ic                -146.012m        -1.272n
+Ie                 157.105m         1.284n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     1.460         11.094u        11.577         22.187u
+Power DC Terms:
+PD                  213.194m       123.071n       134.025f     4.923E-022
+
+DC Pin Currents:
+Ir                  146.012m        11.094m        11.577f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.577         11.094u       -11.094u     3.004E-022
+Power DC Terms:
+PD                  134.026p     1.231E-022       123.071n     9.026E-056
+
+DC Pin Currents:
+Ir                   11.577p         0.011f       -11.094m     3.004E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -1.460        -11.580         -1.460u       419.568m
+Power DC Terms:
+PD                    2.132p       134.106f         2.132n       176.037f
+
+DC Pin Currents:
+Ir                   -1.460p       -11.580f        -1.460m       419.568f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          1.460u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p         2.132n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         1.460m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.987p       -11.094         11.589n       -11.097 
+Power DC Terms:
+PD                1.665E-022       123.071m     1.343E-019        16.203m
+
+DC Pin Currents:
+Ir                 -407.987f       -11.094m        11.589p        -1.460m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000      1.694E-021
+Power DC Terms:
+PG                   1.903          0.000          0.000      1.879E-023
+
+DC Pin Currents:
+ISource           -158.566m        11.094m        11.589p       -11.094m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V               -3.004E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG              -3.333E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.094m        -1.460p       407.987f        -1.460m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -1.776f         0.000 
+Power DC Terms:
+PG                   0.003f         0.000 
+
+DC Pin Currents:
+ISource              1.460m         1.460m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=8.1K                    ***
+*****************************************************
+
+Temperature=27 R5=8.1K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2            10.558   3           901.463m 
+4            11.928   5           419.571m  6            11.095  
+7            11.577   B            22.190u  A            11.577  
+10           11.095u  D           419.571m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.777K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   5.298         42.901n
+
+Current Terms:
+IB                   1.370m      -407.991f
+IC                 137.019m         1.133n
+
+Resistance Terms:
+RPI                 18.876          2.331G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                901.463m       419.571m
+VBC                 -9.656        -11.508 
+VCE                 10.558         11.928 
+
+Frequency Terms:
+FT               8.431E+019       682.793G
+
+Power DC Terms:
+PD                   1.448         13.514n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   1.370m      -407.991f
+Ic                 137.019m         1.133n
+Ie                -138.389m        -1.133n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              12.349        108.975 
+BETAAC              93.892         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   5.666         48.732n
+
+Current Terms:
+IB                  11.095m        11.589p
+IC                 137.019m         1.263n
+
+Resistance Terms:
+RPI                 16.570          2.052G
+RX                   0.000          0.000 
+RO                   2.713          1.000T
+
+Voltage Terms:
+VBE               -904.833m      -422.868m
+VBC               -832.529m         1.020 
+VCE                -72.304m        -1.442 
+
+Frequency Terms:
+FT               9.018E+019       775.598G
+
+Power DC Terms:
+PD                  19.946m         1.827n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.095m       -11.589p
+Ic                -137.019m        -1.263n
+Ie                 148.114m         1.274n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     1.370         11.095u        11.577         22.190u
+Power DC Terms:
+PD                  187.742m       123.102n       134.030f     4.924E-022
+
+DC Pin Currents:
+Ir                  137.019m        11.095m        11.577f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.577         11.095u       -11.095u     1.139E-022
+Power DC Terms:
+PD                  134.030p     1.231E-022       123.102n     1.298E-056
+
+DC Pin Currents:
+Ir                   11.577p         0.011f       -11.095m     1.139E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -1.370        -11.580         -1.370u       419.571m
+Power DC Terms:
+PD                    1.877p       134.106f         1.877n       176.040f
+
+DC Pin Currents:
+Ir                   -1.370p       -11.580f        -1.370m       419.571f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          1.370u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p         1.877n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         1.370m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.991p       -11.095         11.589n       -11.099 
+Power DC Terms:
+PD                1.665E-022       123.102m     1.343E-019        15.207m
+
+DC Pin Currents:
+Ir                 -407.991f       -11.095m        11.589p        -1.370m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000      1.694E-021
+Power DC Terms:
+PG                   1.794          0.000          0.000      1.880E-023
+
+DC Pin Currents:
+ISource           -149.484m        11.095m        11.589p       -11.095m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V               -1.139E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG              -1.264E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.095m        -1.370p       407.991f        -1.370m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -1.776f         0.000 
+Power DC Terms:
+PG                   0.002f         0.000 
+
+DC Pin Currents:
+ISource              1.370m         1.370m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=8.6K                    ***
+*****************************************************
+
+Temperature=27 R5=8.6K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2            10.639   3           899.918m 
+4            11.929   5           419.575m  6            11.096  
+7            11.577   B            22.193u  A            11.577  
+10           11.096u  D           419.575m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.777K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   4.990         42.907n
+
+Current Terms:
+IB                   1.291m      -407.995f
+IC                 129.071m         1.133n
+
+Resistance Terms:
+RPI                 20.039          2.331G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                899.918m       419.575m
+VBC                 -9.739        -11.510 
+VCE                 10.639         11.929 
+
+Frequency Terms:
+FT               7.942E+019       682.888G
+
+Power DC Terms:
+PD                   1.374         13.518n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   1.291m      -407.995f
+Ic                 129.071m         1.133n
+Ie                -130.361m        -1.133n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              11.632        108.264 
+BETAAC              93.517         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   5.362         48.420n
+
+Current Terms:
+IB                  11.096m        11.589p
+IC                 129.071m         1.255n
+
+Resistance Terms:
+RPI                 17.441          2.065G
+RX                   0.000          0.000 
+RO                   2.690          1.000T
+
+Voltage Terms:
+VBE               -903.509m      -422.701m
+VBC               -832.743m       938.771m
+VCE                -70.766m        -1.361 
+
+Frequency Terms:
+FT               8.534E+019       770.633G
+
+Power DC Terms:
+PD                  19.160m         1.713n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.096m       -11.589p
+Ic                -129.071m        -1.255n
+Ie                 140.167m         1.266n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     1.291         11.096u        11.577         22.193u
+Power DC Terms:
+PD                  166.592m       123.132n       134.034f     4.925E-022
+
+DC Pin Currents:
+Ir                  129.071m        11.096m        11.577f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.577         11.096u       -11.096u    -5.219E-023
+Power DC Terms:
+PD                  134.034p     1.231E-022       123.132n     2.723E-057
+
+DC Pin Currents:
+Ir                   11.577p         0.011f       -11.096m    -5.219E-035
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -1.291        -11.580         -1.291u       419.575m
+Power DC Terms:
+PD                    1.666p       134.106f         1.666n       176.043f
+
+DC Pin Currents:
+Ir                   -1.291p       -11.580f        -1.291m       419.575f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          1.291u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p         1.666n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         1.291m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.995p       -11.096         11.589n       -11.100 
+Power DC Terms:
+PD                1.665E-022       123.132m     1.343E-019        14.327m
+
+DC Pin Currents:
+Ir                 -407.995f       -11.096m        11.589p        -1.291m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000     -1.694E-021
+Power DC Terms:
+PG                   1.697          0.000          0.000     -1.880E-023
+
+DC Pin Currents:
+ISource           -141.458m        11.096m        11.589p       -11.096m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V                5.219E-023         0.000          0.000          0.000 
+Power DC Terms:
+PG               5.791E-025         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.096m        -1.291p       407.994f        -1.291m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -1.776f         0.000 
+Power DC Terms:
+PG                   0.002f         0.000 
+
+DC Pin Currents:
+ISource              1.291m         1.291m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=9.1K                    ***
+*****************************************************
+
+Temperature=27 R5=9.1K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2            10.711   3           898.459m 
+4            11.931   5           419.578m  6            11.098  
+7            11.577   B            22.195u  A            11.577  
+10           11.098u  D           419.578m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.778K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   4.717         42.913n
+
+Current Terms:
+IB                   1.220m      -407.998f
+IC                 121.995m         1.133n
+
+Resistance Terms:
+RPI                 21.201          2.330G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                898.459m       419.578m
+VBC                 -9.812        -11.511 
+VCE                 10.711         11.931 
+
+Frequency Terms:
+FT               7.507E+019       682.975G
+
+Power DC Terms:
+PD                   1.308         13.521n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   1.220m      -407.998f
+Ic                 121.995m         1.133n
+Ie                -123.215m        -1.133n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              10.993        107.629 
+BETAAC              93.150         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   5.091         48.142n
+
+Current Terms:
+IB                  11.098m        11.589p
+IC                 121.995m         1.247n
+
+Resistance Terms:
+RPI                 18.296          2.077G
+RX                   0.000          0.000 
+RO                   2.671          1.000T
+
+Voltage Terms:
+VBE               -902.271m      -422.553m
+VBC               -832.933m       866.735m
+VCE                -69.338m        -1.289 
+
+Frequency Terms:
+FT               8.103E+019       766.210G
+
+Power DC Terms:
+PD                  18.472m         1.613n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.098m       -11.589p
+Ic                -121.995m        -1.247n
+Ie                 133.093m         1.259n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     1.220         11.098u        11.577         22.195u
+Power DC Terms:
+PD                  148.828m       123.159n       134.037f     4.926E-022
+
+DC Pin Currents:
+Ir                  121.995m        11.098m        11.577f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.577         11.098u       -11.098u    -2.011E-022
+Power DC Terms:
+PD                  134.037p     1.232E-022       123.159n     4.043E-056
+
+DC Pin Currents:
+Ir                   11.577p         0.011f       -11.098m    -2.011E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -1.220        -11.580         -1.220u       419.578m
+Power DC Terms:
+PD                    1.488p       134.106f         1.488n       176.046f
+
+DC Pin Currents:
+Ir                   -1.220p       -11.580f        -1.220m       419.578f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          1.220u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p         1.488n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         1.220m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -407.998p       -11.098         11.589n       -11.102 
+Power DC Terms:
+PD                1.665E-022       123.159m     1.343E-019        13.543m
+
+DC Pin Currents:
+Ir                 -407.998f       -11.098m        11.589p        -1.220m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000     -1.694E-021
+Power DC Terms:
+PG                   1.612          0.000          0.000     -1.880E-023
+
+DC Pin Currents:
+ISource           -134.313m        11.098m        11.589p       -11.098m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V                2.011E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG               2.231E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.098m        -1.220p       407.998f        -1.220m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -1.776f         0.000 
+Power DC Terms:
+PG                   0.002f         0.000 
+
+DC Pin Currents:
+ISource              1.220m         1.220m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=9.6K                    ***
+*****************************************************
+
+Temperature=27 R5=9.6K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2            10.775   3           897.079m 
+4            11.932   5           419.581m  6            11.099  
+7            11.578   B            22.198u  A            11.578  
+10           11.099u  D           419.581m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.778K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   4.472         42.918n
+
+Current Terms:
+IB                   1.157m      -408.001f
+IC                 115.655m         1.133n
+
+Resistance Terms:
+RPI                 22.363          2.330G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                897.079m       419.581m
+VBC                 -9.878        -11.512 
+VCE                 10.775         11.932 
+
+Frequency Terms:
+FT               7.117E+019       683.057G
+
+Power DC Terms:
+PD                   1.247         13.524n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   1.157m      -408.001f
+Ic                 115.655m         1.133n
+Ie                -116.812m        -1.133n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              10.420        107.061 
+BETAAC              92.788         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   4.849         47.893n
+
+Current Terms:
+IB                  11.099m        11.589p
+IC                 115.655m         1.241n
+
+Resistance Terms:
+RPI                 19.137          2.088G
+RX                   0.000          0.000 
+RO                   2.653          1.000T
+
+Voltage Terms:
+VBE               -901.108m      -422.418m
+VBC               -833.101m       802.143m
+VCE                -68.007m        -1.225 
+
+Frequency Terms:
+FT               7.717E+019       762.244G
+
+Power DC Terms:
+PD                  17.867m         1.524n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.099m       -11.589p
+Ic                -115.655m        -1.241n
+Ie                 126.754m         1.252n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     1.157         11.099u        11.578         22.198u
+Power DC Terms:
+PD                  133.762m       123.185n       134.040f     4.927E-022
+
+DC Pin Currents:
+Ir                  115.655m        11.099m        11.578f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.578         11.099u       -11.099u    -3.353E-022
+Power DC Terms:
+PD                  134.040p     1.232E-022       123.185n     1.124E-055
+
+DC Pin Currents:
+Ir                   11.578p         0.011f       -11.099m    -3.353E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -1.157        -11.580         -1.157u       419.581m
+Power DC Terms:
+PD                    1.338p       134.106f         1.338n       176.049f
+
+DC Pin Currents:
+Ir                   -1.157p       -11.580f        -1.157m       419.581f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          1.157u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p         1.338n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         1.157m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -408.001p       -11.099         11.589n       -11.103 
+Power DC Terms:
+PD                1.665E-022       123.185m     1.343E-019        12.841m
+
+DC Pin Currents:
+Ir                 -408.001f       -11.099m        11.589p        -1.157m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000      1.694E-021
+Power DC Terms:
+PG                   1.535          0.000          0.000      1.880E-023
+
+DC Pin Currents:
+ISource           -127.911m        11.099m        11.589p       -11.099m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V                3.353E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG               3.722E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.099m        -1.157p       408.001f        -1.157m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                   -5.329f         0.000 
+Power DC Terms:
+PG                   0.006f         0.000 
+
+DC Pin Currents:
+ISource              1.157m         1.157m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R5=10K                     ***
+*****************************************************
+
+Temperature=27 R5=10K
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+VCC          12.000   2            10.823   3           896.026m 
+4            11.933   5           419.584m  6            11.100  
+7            11.578   B            22.200u  A            11.578  
+10           11.100u  D           419.584m  C            12.000  
+13           12.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2
+Using model:          TIP41          TIP41
+
+Beta Terms:
+BETADC             100.000         -2.778K
+BETAAC             100.000         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   4.293         42.922n
+
+Current Terms:
+IB                   1.110m      -408.003f
+IC                 111.040m         1.134n
+
+Resistance Terms:
+RPI                 23.293          2.330G
+RX                   0.000          0.000 
+RO                   1.000T         1.000T
+
+Voltage Terms:
+VBE                896.026m       419.584m
+VBC                 -9.927        -11.513 
+VCE                 10.823         11.933 
+
+Frequency Terms:
+FT               6.833E+019       683.118G
+
+Power DC Terms:
+PD                   1.203         13.527n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                   1.110m      -408.003f
+Ic                 111.040m         1.134n
+Ie                -112.150m        -1.133n
+Is                   0.000          0.000 
+
+Condition:
+State                   HOT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q3             Q4
+Using model:          TIP42          TIP42
+
+Beta Terms:
+BETADC              10.004        106.647 
+BETAAC              92.503         99.998 
+
+Capacitance Terms:
+CPI                  0.000          0.000 
+CMU                  0.000          0.000 
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                   4.672         47.712n
+
+Current Terms:
+IB                  11.100m        11.589p
+IC                 111.040m         1.236n
+
+Resistance Terms:
+RPI                 19.800          2.096G
+RX                   0.000          0.000 
+RO                   2.641          1.000T
+
+Voltage Terms:
+VBE               -900.228m      -422.320m
+VBC               -833.223m       755.082m
+VCE                -67.004m        -1.177 
+
+Frequency Terms:
+FT               7.435E+019       759.354G
+
+Power DC Terms:
+PD                  17.432m         1.460n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                 -11.100m       -11.589p
+Ic                -111.040m        -1.236n
+Ie                 122.139m         1.248n
+Is                   0.000          0.000 
+
+Condition:
+State                   SAT            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1     SWITCH1.R1     SWITCH1.R2     SWITCH1.R3
+V                     1.110         11.100u        11.578         22.200u
+Power DC Terms:
+PD                  123.298m       123.204n       134.042f     4.928E-022
+
+DC Pin Currents:
+Ir                  111.040m        11.100m        11.578f         0.022f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH1.R4     SWITCH1.R5     SWITCH2.R1     SWITCH2.R2
+V                    11.578         11.100u       -11.100u    -4.335E-022
+Power DC Terms:
+PD                  134.043p     1.232E-022       123.204n     1.880E-055
+
+DC Pin Currents:
+Ir                   11.578p         0.011f       -11.100m    -4.335E-034
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           METER3.R     SWITCH4.R1     SWITCH4.R2     SWITCH4.R3
+V                    -1.110        -11.580         -1.110u       419.584m
+Power DC Terms:
+PD                    1.233p       134.106f         1.233n       176.050f
+
+DC Pin Currents:
+Ir                   -1.110p       -11.580f        -1.110m       419.584f
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:         SWITCH4.R4     SWITCH4.R5     SWITCH5.R1     SWITCH5.R2
+V                    12.000         12.000          1.110u        12.000 
+Power DC Terms:
+PD                  144.000p       144.000p         1.233n       144.000p
+
+DC Pin Currents:
+Ir                   12.000p        12.000p         1.110m        12.000p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R2             R3             R4             R5
+V                  -408.003p       -11.100         11.589n       -11.104 
+Power DC Terms:
+PD                1.665E-022       123.204m     1.343E-019        12.330m
+
+DC Pin Currents:
+Ir                 -408.003f       -11.100m        11.589p        -1.110m
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1     SWITCH1.V1     SWITCH1.V2     SWITCH1.V3
+V                   12.000          0.000          0.000      1.694E-021
+Power DC Terms:
+PG                   1.479          0.000          0.000      1.880E-023
+
+DC Pin Currents:
+ISource           -123.250m        11.100m        11.589p       -11.100m
+
+
+Instance:        SWITCH2.V1       METER3.V     SWITCH4.V1     SWITCH4.V2
+V                4.335E-022         0.000          0.000          0.000 
+Power DC Terms:
+PG               4.812E-024         0.000          0.000          0.000 
+
+DC Pin Currents:
+ISource            -11.100m        -1.110p       408.003f        -1.110m
+
+
+Instance:        SWITCH4.V3     SWITCH5.V1
+V                    1.776f         0.000 
+Power DC Terms:
+PG                  -0.002f         0.000 
+
+DC Pin Currents:
+ISource              1.110m         1.110m
+
+

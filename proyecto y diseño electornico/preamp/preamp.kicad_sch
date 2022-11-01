@@ -1,0 +1,22 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid ab43e45f-c220-4d08-9e22-b62bf309768d)
+
+  (paper "A4")
+
+  (title_block
+    (title "Pre amp")
+    (date "2022-10-29")
+    (rev "0.1")
+    (company "E.E.S.T. Nº5")
+    (comment 1 "Autor: Dal Degan Santiago")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
